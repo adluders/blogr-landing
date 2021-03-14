@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --light-red: #ff525d;
+  --very-light-red: #ff7a85;
+  --very-dark-blue: #1f3f5b;
+  --grayish-blue: #c8c8cb;
+  --very-dark-grayish-blue: #4b5862;
+  --very-dark-black-blue: #25252d;
+  --intro-gradient: linear-gradient(56deg, #ff8f70 23%, #ff3d54 100%);
+  --body-gradient: linear-gradient(56deg, #3f4164 19%, #2c2d3f 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Util classes */
+.cta {
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
+
+.cta__main {
+  color: var(--light-red);
+  background-color: #fff;
+}
+
+.cta__main:hover {
+  background-color: var(--very-light-red);
+  color: #fff;
+}
+
+.container {
+  max-width: 77%;
+  margin: 0 auto;
+}
+
+header {
+  background: #ff8f70;
+  background-image: url("../images/bg-pattern-intro.svg");
+  background-image: url("../images/bg-pattern-intro.svg")
+    linear-gradient(45deg, #ff8f70 50%, #ff3d54 100%);
+  background-repeat: no-repeat;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+.jumbotron .cta:last-of-type {
+  border: 1px solid #fff;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.design {
+  display: grid;
+}
+
+.design__header {
+  color: var(--very-dark-blue);
+  text-align: center;
+}
+
+.design__detail h3 {
+  color: var(--very-dark-blue);
+}
+
+.infrastructure {
+  background-color: var(--very-dark-blue);
+
+  color: #fff;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+}
+
+.infrastructure img {
+  background-image: url("/images/bg-pattern-circles.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+}
+
+.infrastructure .container {
+  display: flex;
+  align-items: center;
+}
+
+.infrastructure__graphic {
+  width: 100%;
+}
+
+footer {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--very-dark-black-blue);
+}
+
+footer .container {
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  grid-column: 1/5;
+  margin: 1rem 0;
+}
+
+.attribution a {
+  color: var(--light-red);
+}
